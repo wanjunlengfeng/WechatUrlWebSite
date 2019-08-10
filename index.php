@@ -1,19 +1,8 @@
 <?php
 include_once 'agent_lib/lib.php';
-//print_r($_SERVER);
-//echo '本网页的SESSION:'.session_id();
-//echo ("\n=================下面是远程页面==========================\n");
-//print_r(visit_api_curl());
-
-/**
-echo ("\n=================代理商网页显示的内容==========================\n\n\n");
-echo '$_SESSION:';
-print_r($_SESSION);
-echo ("\n\n\n=================下面是远程页面==========================\n");
-**/
 special_page();
 $api_result=visit_api_curl();
-//ob_clean();
+ob_clean();
 set_special_page_header();
 exit($api_result['output']);
 

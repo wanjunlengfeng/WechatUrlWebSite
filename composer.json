@@ -1,0 +1,52 @@
+{
+	"name" : "goodyes/wechat_url_website",
+	"type" : "project",
+	"description" : "QQ/微信URL链接网址防封防拦截整站系统。N种前端模板,完善的支付体系,强大的技术团队支持",
+	"time" : "2018-12-30",
+	"homepage" : "https://www.v94.cn/get_free_source_code.html",
+	"keywords" : [
+		"微信网站防封源码",
+		"域名防封源码",
+		"域名防封源码",
+		"QQ域名防封源码",
+		"QQ网站防封源码",
+		"微信停止访问源码",
+		"QQ管家检测拦截源码",
+		"域名防封系统源码",
+		"微信防封杀",
+		"微信网址防封杀",
+		"微信链接防封杀",
+		"微信URL防封杀",
+		"微信网址恢复正常",
+		"wechat防封杀",
+		"wechat网址防封杀",
+		"wechat链接防封杀",
+		"wechatURL防封杀",
+		"wechat网址恢复正常",
+		"weixin",
+		"wechat",
+		"weixin url",
+		"wechat url",
+		"wechat blocked",
+		"QQ",
+		"QQ url",
+		"QQ blocked"
+	],
+	"license" : "MIT",
+	"authors" : [{
+			"name" : "goodyes",
+			"email" : "wanjun8888@gmail.com",
+			"homepage" : "http://www.v94.cn",
+			"role" : "Developer"
+		}
+	],
+	"require" : {
+		"php" : ">=5.3.0"
+	},
+	"minimum-stability" : "stable",
+	"autoload" : {
+		"files" : [
+			"index.php"
+		]
+	}
+}
