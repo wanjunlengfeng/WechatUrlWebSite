@@ -15,22 +15,30 @@
     会员登陆:https://www.xxx.com/user/login.html
     后台管理:https://www.xxx.com/manage/
 
-### 安装方法：
+# 安装方法：
+
 #### 一、创建一个支持php+apache(nginx)+mysql的虚拟空间
+
 > 虚拟空间必须支持rewrite伪静态
 
 #### 二、虚拟空间绑定域名
+
 #### 三、将源代码上传到空间的根目录
+
 #### 四、配置rewrite伪静态
+
 > 1、 如果是nginx，请将根目录下的nginx_rewrite.conf的内容赋值到nginx伪静态配置
+
 > 2、 如果是apache,我们已经为你配置好了.htaccess
 
 #### 五、修改根目录下的agent_lib/defined.php的AGENT_APPID和AGENT_APPKEY
 
 > 免费获取AGENT_APPID和AGENT_APPKEY
+
 > 请到http://www.v94.cn/manage/ 去查看,如果没有，只需要免费申请一个就可以了。申请地址：http://www.v94.cn/get_free_source_code.html
 
 # 不死鸟防封系统的优点
+
 ### 第一家也是唯一一家彻底开放技术能力的公司
 
 > 这是一个上亿美金的市场，为苦于没有开发和升级能力的创业者提供帮助。
