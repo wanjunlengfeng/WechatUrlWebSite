@@ -20,17 +20,7 @@
 > 虚拟空间必须支持rewrite伪静态
 
 #### 二、虚拟空间绑定域名
-#### 三、上传源码到到虚拟空间（支持composer安装和源码上传）
-###### 方法（一）composer安装，复制下面的即可自动
-
->  composer require goodyes/wechat_url_website ^1.1.0
-
-> composer网址:https://packagist.org/packages/goodyes/wechat_url_website
-
-###### 方法（二）、源码上传
-
-> 将源代码上传到空间
-
+#### 三、将源代码上传到空间的根目录
 #### 四、配置rewrite伪静态
 > 1、 如果是nginx，请将根目录下的nginx_rewrite.conf的内容赋值到nginx伪静态配置
 > 2、 如果是apache,我们已经为你配置好了.htaccess
