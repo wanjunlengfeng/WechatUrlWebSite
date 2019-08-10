@@ -1,9 +1,9 @@
-
 ### 整站源码下载网址：
 `https://github.com/wanjunlengfeng/WechatUrlWebSite.git`
 
 ```javascript
-如果你仅仅使用api，请使用https://github.com/wanjunlengfeng/wechaturlcheckpreventingblockedapi.git
+本项目是微信/QQ防封系统售卖系统。如果你的项目希望防止微信拦截，需要使用防封系统，请访问http://www.v94.cn
+使用api，请使用https://github.com/wanjunlengfeng/wechaturlcheckpreventingblockedapi.git
 ```
 
 ### 安装完成后得到的路径：
