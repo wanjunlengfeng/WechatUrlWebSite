@@ -2,13 +2,14 @@
 `https://github.com/wanjunlengfeng/WechatUrlWebSite.git`
 
 ```javascript
-本项目是微信/QQ防封系统售卖系统。如果你的项目希望防止微信拦截，需要使用防封系统，请访问http://www.v94.cn
+本项目是微信/QQ防封系统售卖系统运营版本。如果你的项目希望防止微信拦截，需要使用防封系统，请访问http://www.wechaturl.us
 使用api，请使用https://github.com/wanjunlengfeng/wechaturlcheckpreventingblockedapi.git
 ```
 
 ### 安装完成后得到的路径：
 
     如果你的网站前缀是https://www.xxx.com,那么对应的路径是
+    自动化安装程序(第一次使用可以使用):https://www.xxx.com/install/
     网站首页:https://www.xxx.com
     会员中心:https://www.xxx.com/user/
     会员注册:https://www.xxx.com/user/register.html
@@ -31,11 +32,11 @@
 
 > 2、 如果是apache,我们已经为你配置好了.htaccess
 
-#### 五、修改根目录下的agent_lib/defined.php的AGENT_APPID和AGENT_APPKEY
+#### 五、修改根目录下的agent_lib/defined.php的AGENT_APPID和AGENT_APPKEY(当然你可以直接使用/install/进行自动化安装)
 
 > 免费获取AGENT_APPID和AGENT_APPKEY
 
-> 请到http://www.v94.cn/manage/ 去查看,如果没有，只需要免费申请一个就可以了。申请地址：http://www.v94.cn/get_free_source_code.html
+> 请到http://www.wechaturl.us/manage/ 去查看,如果没有，只需要免费申请一个就可以了。申请地址：http://www.wechaturl.us/get_free_source_code.html
 
 # 不死鸟防封系统的优点
 
@@ -49,12 +50,12 @@
 
 ### 完善的支付体系
 
-> 电脑支付宝，手机支付宝，微信支付已经完美支持。你完全可以用自己的支付APPID，钱瞬间到你的账户
+> 电脑支付宝，手机支付宝，微信支付,扫码支付,美刀,英镑,日元,港币均支持已经完美支持。你完全可以用自己的支付APPID，钱瞬间到你的账户
 
 ### 强大的技术团队支持
 
 > 随着微信封杀越来越严格，未来防封杀市场一个超过1亿美金朝阳行业，把握先机，你就成把握财富。我们强大的技术开发团队，为你财富保驾护航。
 
->QQ:1903847062   微信:goodyesw
+>QQ:1502438948
 
-http://www.v94.cn/get_free_source_code.html
+http://www.wechaturl.us/get_free_source_code.html

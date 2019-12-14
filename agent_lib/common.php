@@ -6,13 +6,30 @@ $agent_api_urls=[
  * http_build_query($_COOKIE)
  * parse_str()
  * */
+function to_redirect_url($redirect_url){
+    $parse=parse_url($redirect_url);
+   
+    $httpdomain=$parse['scheme'].'://'.$parse['host'];
+    if(isset($parse['port'])){
+        $httpdomain.=':'.$parse['port'];
+    }
+    $path=str_replace($httpdomain, '', $redirect_url);
 
+    if(startWith($path, '/')){
+        header("Location:".$path);
+        exit();
+    }
+}
 function visit_api_curl(){
     global $agent_api_urls;
     $is_post_submit=true;
     $count=count($agent_api_urls);
     for ($i=0;$i<$count;$i++){
         $result=api_curl($i,$is_post_submit);
+
+        if(isset($result['redirect_url'])){
+            to_redirect_url($result['redirect_url']);
+        }
         if($result['http_code']==405){
             $is_post_submit=false;
             $result=api_curl($i,$is_post_submit);
@@ -31,6 +48,7 @@ function api_curl($times=0,$is_post_submit=true){
     }
     $url=$agent_api_urls[$times].$request_uri;
     $headers = [
+        'AGENTCLIENTVERSION:2.1',
         'AGENTAPPID:'.AGENT_APPID,
         'AGENTAPPKEY:'.AGENT_APPKEY,
         'CLIENTIP:'.get_real_client_ip(),
@@ -43,11 +61,14 @@ function api_curl($times=0,$is_post_submit=true){
     if(isset($_SESSION['AGENTUUID'])){
         $headers[]='AGENTUUID:'.$_SESSION['AGENTUUID'];
     }
+    if(isset($_SESSION['OPTIONCODE'])){
+        $headers[]='OPTIONCODE:'.$_SESSION['OPTIONCODE'];
+    }
     $headers[]='AGENTWEBSITE:1';
     $post=$_POST;
     $ch = curl_init();
     curl_setopt($ch, CURLOPT_URL, $url);
-    //curl_setopt($ch, CURLOPT_FOLLOWLOCATION ,1); //加入重定向处理
+    //curl_setopt($ch, CURLOPT_FOLLOWLOCATION ,1); //300-400
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
     curl_setopt($ch, CURLOPT_TIMEOUT, 15);
     curl_setopt($ch, CURLOPT_HEADER, 0);
@@ -59,13 +80,6 @@ function api_curl($times=0,$is_post_submit=true){
        curl_setopt($ch, CURLOPT_POSTFIELDS, $post);
     }
 
-    /*
-     * curl_setopt($ch,CURLOPT_COOKIESESSION,1);
-    curl_setopt($ch, CURLOPT_COOKIE, http_build_query($_COOKIE));
-    $cookie_jar = tempnam('/home/goodyesprojects/wechatblock/agent_www/tempdata/','cookie_');
-    curl_setopt($ch, CURLOPT_COOKIEJAR, 'cookies.txt');
-    curl_setopt($ch, CURLOPT_COOKIEFILE, 'cookies.txt');
-    */
     if(startWith($url, 'https')){
         curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
         curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, false);
@@ -74,7 +88,11 @@ function api_curl($times=0,$is_post_submit=true){
     $getinfo = curl_getinfo($ch);
     $http_code=$getinfo['http_code'];
     curl_close($ch);
-    return ['http_code'=>$http_code,'output'=>$output];
+    $result=['http_code'=>$http_code,'output'=>$output];
+    if($http_code>300 and $http_code<400 and isset($getinfo['redirect_url'])){
+        $result['redirect_url']=$getinfo['redirect_url'];
+    }
+    return $result;
 }
 /*
  * 字符串是否以$needle开头

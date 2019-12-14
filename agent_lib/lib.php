@@ -3,7 +3,7 @@ header("Content-Type: text/html; charset=utf-8");
 header("Access-Control-Allow-Origin: *");
 error_reporting(E_ALL ^ E_NOTICE);
 date_default_timezone_set('PRC');
-session_name('BUSINIAO_SESSION_ID');
+session_name('PHOENIX_SESSION_ID');
 session_start();
 
 require_once 'defined.php';

@@ -4,6 +4,8 @@ special_page();
 $api_result=visit_api_curl();
 ob_clean();
 set_special_page_header();
+//print_r($_SESSION);
+//print_r($api_result);
 exit($api_result['output']);
 
 function special_page(){
@@ -16,7 +18,7 @@ function set_special_page_header(){
     $path=$parse['path'];
     if(endWith($path, '.ico')){
         header('Content-type: image/png');
-    }else if(endWith($path, '.jpg')){
+    }else if(endWith($path, '.jpg') or endWith($path, '.jpeg')){
         header('Content-type: image/jpg');
     }else if(endWith($path, '.png')){
         header('Content-type: image/png');
