@@ -59,8 +59,12 @@
 
 > 随着微信封杀越来越严格，未来防封杀市场一个超过1亿美金朝阳行业，把握先机，你就成把握财富。我们强大的技术开发团队，为你财富保驾护航。
 
-> 纸飞机(Telegram):https://t.me/weixinfangfeng
+### 和我们一起交流
+
+> 纸飞机(Telegram) @weixinfangfeng :https://t.me/weixinfangfeng
+
 > skype:https://join.skype.com/invite/wU9pVGpzmpQs
+
 > QQ:1502438948
 
 http://www.wechaturl.us/get_free_source_code.html
