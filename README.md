@@ -1,4 +1,4 @@
-##由于版权问题,请访问官方的github https://github.com/wechaturl/Wechat_Weixin_QQ_domain_fangfeng_system_code.git
+## 由于版权问题,请访问官方的github https://github.com/wechaturl/Wechat_Weixin_QQ_domain_fangfeng_system_code.git
 
 ### 整站源码下载网址：
 `https://github.com/wechaturl/Wechat_Weixin_QQ_domain_fangfeng_system_code.git`
@@ -35,6 +35,7 @@
 > 2、 如果是apache,我们已经为你配置好了.htaccess
 
 #### 五、修改根目录下的agent_lib/defined.php的AGENT_APPID和AGENT_APPKEY(当然你可以直接使用/install/进行自动化安装)
+![](https://raw.githubusercontent.com/wechaturl/Wechat_Weixin_QQ_domain_fangfeng_system_code/master/own_static/guide_documents/install_page.png)
 
 > 免费获取AGENT_APPID和AGENT_APPKEY
 
