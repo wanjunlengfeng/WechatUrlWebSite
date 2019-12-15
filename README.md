@@ -1,9 +1,11 @@
+##由于版权问题,请访问官方的github https://github.com/wechaturl/Wechat_Weixin_QQ_domain_fangfeng_system_code.git
+
 ### 整站源码下载网址：
-`https://github.com/wanjunlengfeng/WechatUrlWebSite.git`
+`https://github.com/wechaturl/Wechat_Weixin_QQ_domain_fangfeng_system_code.git`
 
 ```javascript
-本项目是微信/QQ防封系统售卖系统运营版本。如果你的项目希望防止微信拦截，需要使用防封系统，请访问http://www.wechaturl.us
-使用api，请使用https://github.com/wanjunlengfeng/wechaturlcheckpreventingblockedapi.git
+本项目是微信/QQ防封系统售卖系统运营版本。如果你的项目希望防止微信QQ拦截，需要使用防封系统，请访问http://www.wechaturl.us
+使用api，请使用https://github.com/wechaturl/wechat_url_api.git
 ```
 
 ### 安装完成后得到的路径：
@@ -36,7 +38,7 @@
 
 > 免费获取AGENT_APPID和AGENT_APPKEY
 
-> 请到http://www.wechaturl.us/manage/ 去查看,如果没有，只需要免费申请一个就可以了。申请地址：http://www.wechaturl.us/get_free_source_code.html
+> 请到https://www.wechaturl.us/manage/ 去查看,如果没有，只需要免费申请一个就可以了。申请地址：http://www.wechaturl.us/get_free_source_code.html
 
 # 不死鸟防封系统的优点
 
@@ -56,6 +58,8 @@
 
 > 随着微信封杀越来越严格，未来防封杀市场一个超过1亿美金朝阳行业，把握先机，你就成把握财富。我们强大的技术开发团队，为你财富保驾护航。
 
->QQ:1502438948
+> 纸飞机(Telegram):https://t.me/weixinfangfeng
+> skype:https://join.skype.com/invite/wU9pVGpzmpQs
+> QQ:1502438948
 
 http://www.wechaturl.us/get_free_source_code.html
