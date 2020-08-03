@@ -1,4 +1,4 @@
-## 由于版权问题,请访问官方的github https://github.com/wechaturl/Wechat_Weixin_QQ_domain_fangfeng_system_code.git
+## 由于被开发商版权侵权警告,版本陈旧，不再更新。请访问官方的最新github源码 https://github.com/wechaturl/Wechat_Weixin_QQ_domain_fangfeng_system_code.git
 
 ### 整站源码下载网址：
 `https://github.com/wechaturl/Wechat_Weixin_QQ_domain_fangfeng_system_code.git`
