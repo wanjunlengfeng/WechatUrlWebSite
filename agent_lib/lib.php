@@ -1,25 +1,5 @@
-<?php
-header("Content-Type: text/html; charset=utf-8");
-header("Access-Control-Allow-Origin: *");
-error_reporting(E_ALL ^ E_NOTICE);
-date_default_timezone_set('PRC');
-session_name('PHOENIX_SESSION_ID');
-session_start();
+## Due to the developer's copyright infringement warning, this git version is outdated and no longer be updated. Please visit the official latest github open source , https://github.com/wechaturl/Wechat_Weixin_QQ_domain_fangfeng_system_code.git
 
-require_once 'defined.php';
-require_once 'common.php';
+## 由于被开发商版权侵权警告,版本陈旧，不再更新。请访问官方的最新github源码 https://github.com/wechaturl/Wechat_Weixin_QQ_domain_fangfeng_system_code.git
 
-function set_session($html){
-    $html=trim($html);
-    if(!startWith($html, '{') or !endWith($html, '}')){
-        return ;
-    }
-    $array=json_decode($html,true);
-    if(!array_key_exists('save_sessions', $array)){
-        return;
-    }
-    foreach ($array['save_sessions'] as $key=>$value){
-        $_SESSION[$key]=$value;
-    }
 
-}

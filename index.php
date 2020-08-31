@@ -1,27 +1,5 @@
-<?php
-include_once 'agent_lib/lib.php';
-special_page();
-$api_result=visit_api_curl();
-ob_clean();
-set_special_page_header();
-//print_r($_SESSION);
-//print_r($api_result);
-exit($api_result['output']);
+## Due to the developer's copyright infringement warning, this git version is outdated and no longer be updated. Please visit the official latest github open source , https://github.com/wechaturl/Wechat_Weixin_QQ_domain_fangfeng_system_code.git
 
-function special_page(){
-    if($_GET['type']=='logout'){
-        session_destroy();
-    }
-}
-function set_special_page_header(){
-    $parse=request_uri_2_parse();
-    $path=$parse['path'];
-    if(endWith($path, '.ico')){
-        header('Content-type: image/png');
-    }else if(endWith($path, '.jpg') or endWith($path, '.jpeg')){
-        header('Content-type: image/jpg');
-    }else if(endWith($path, '.png')){
-        header('Content-type: image/png');
-    }
-}
+## 由于被开发商版权侵权警告,版本陈旧，不再更新。请访问官方的最新github源码 https://github.com/wechaturl/Wechat_Weixin_QQ_domain_fangfeng_system_code.git
+
 
